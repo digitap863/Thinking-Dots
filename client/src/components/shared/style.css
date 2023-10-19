@@ -1,0 +1,13 @@
+.headerText {
+  text-shadow: rgb(175, 175, 175) 6px 5px 0;
+}
+
+.swiper{
+    overflow-y: visible;
+}
+
+.swiper-horizontal
+  > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    bottom: -12%;
+}
