@@ -4,6 +4,7 @@ import logo from './assets/Shared/logoBlack.png'
 import './App.css'
 import Home from './pages/Home'
 import ServicesDetails from './pages/ServicesDetails'
+import ScrollToTopOnNavigate from './components/shared/AutoScroll'
 // import About from './pages/About';
 const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import('./pages/Services'))
@@ -28,6 +29,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className='overflw-hidden'>
+        <ScrollToTopOnNavigate/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<Suspense fallback={<FallbackUI />}><About /></Suspense>} />
