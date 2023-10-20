@@ -3,11 +3,13 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import logo from './assets/Shared/logoBlack.png'
 import './App.css'
 import Home from './pages/Home'
+import ServicesDetails from './pages/ServicesDetails'
 // import About from './pages/About';
 const About = lazy(() => import('./pages/About'))
 const Services = lazy(() => import('./pages/Services'))
 const ShowcasePage = lazy(() => import('./pages/Showcase'))
 const BlogsPage = lazy(() => import('./pages/BlogsPage'))
+const BlogDetails = lazy(() => import('./pages/BlogDetails'))
 
 const FallbackUI = () => <div className="preloader loaded-success fixed top-0 inset-0  bg-opacity-30 z-50">
   <div className="absolute left-[35%] md:left-[46%] top-1/2 transform -translate-y-1/2">
@@ -32,6 +34,8 @@ function App() {
         <Route path="/service" element={<Suspense fallback={<FallbackUI />}><Services /></Suspense>} />
         <Route path="/showcase" element={<Suspense fallback={<FallbackUI />}><ShowcasePage /></Suspense>} />
         <Route path="/blogs" element={<Suspense fallback={<FallbackUI />}><BlogsPage /></Suspense>} />
+        <Route path="/blog-details" element={<Suspense fallback={<FallbackUI />}><BlogDetails /></Suspense>} />
+        <Route path="/service-details" element={<Suspense fallback={<FallbackUI />}><ServicesDetails /></Suspense>} />
       </Routes>
       </div>
     </BrowserRouter>

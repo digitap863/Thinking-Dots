@@ -15,7 +15,7 @@ function Blogs() {
   const path = location.pathname
   return (
     <div className='flex flex-col font-mont items-center relative my-20'>
-      <h1 className='text-6xl font-extrabold'>{path==='/blogs'||path==='/blog-item'?'Popular Blogs':'Blogs'}</h1>
+      <h1 className='text-6xl font-extrabold'>{path==='/blogs'||path==='/blog-details'?'Popular Blogs':'Blogs'}</h1>
       <div className='w-[85%] mt-16'>
           <Swiper
             pagination={{

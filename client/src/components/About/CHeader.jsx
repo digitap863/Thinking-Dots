@@ -4,9 +4,9 @@ import { Button } from '@nextui-org/react'
 
 function CHeader({image,title}) {
     return (
-        <div className='h-screen relative font-mont flex flex-col'>
+        <div className={`${title?'h-screen':''} relative font-mont flex flex-col`}>
             <Navbar />
-            <div className='w-full'>
+            {title&&<div className='w-full'>
                 <div className='flex justify-start gap-12'>
                     <div className='w-[50%] flex flex-col pl-40 justify-center gap-3 items-start'>
                         <h5 className='font-bold text-xl tracking-[.7rem]'>AGANCY STUDIO</h5>
@@ -21,7 +21,7 @@ function CHeader({image,title}) {
                 </div>
 
                 {/* <button className='flex items-center gap-2 mt-10 w-44 bg-[#EAB600] text-white py-3 hover:bg-[#e4ff4d] hover:text-gray-500 transition ease-in-out duration-300 px-5 rounded-xl  font-semibold'>Know More <ChevronDoubleRightIcon className='w-5' /></button> */}
-            </div>
+            </div>}
         </div>
     )
 }
