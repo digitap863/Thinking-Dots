@@ -14,9 +14,9 @@ function Blogs() {
   const location = useLocation()
   const path = location.pathname
   return (
-    <div className='flex flex-col font-mont items-center relative my-20'>
-      <h1 className='text-6xl font-extrabold'>{path==='/blogs'||path==='/blog-details'?'Popular Blogs':'Blogs'}</h1>
-      <div className='w-[85%] mt-16'>
+    <div className='flex flex-col font-mont items-center relative my-10 lg:my-20'>
+      <h1 className='text-5xl lg:text-6xl font-extrabold'>{path==='/blogs'||path==='/blog-details'?'Popular Blogs':'Blogs'}</h1>
+      <div className='w-[95%] lg:w-[85%] mt-7 lg:mt-16'>
           <Swiper
             pagination={{
               dynamicBullets: true,
@@ -31,46 +31,58 @@ function Blogs() {
               prevEl: ".prev-button2",
               clickable: true,
             }}
+            breakpoints={{
+              // For mobile view
+              0: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 10, // Adjust spacing as needed
+              },
+              // For tablet and larger screens
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 20, // Adjust spacing as needed
+              },
+            }}
           >
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog1})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog2})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog3})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog3})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog1})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='relative flex justify-center bg-red-00'>
+            <SwiperSlide className='relative flex justify-center'>
               <div className='w-[30rem] flex flex-col justify-between items-start p-4 font-mont border-black border-[3px] rounded-3xl' style={{ backgroundImage: `url(${blog2})` }}>
                 <div className='bg-white p-1 rounded-md'>Marketing</div>
-                <h5 className='font-semibold text-white mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
+                <h5 className='font-semibold text-sm lg:text-base text-white mt-5 lg:mt-28'>Loream ipsum is simpy dummy text of printing and .</h5>
                 <p className='text-white text-tiny mt-4'>Nov 29 . 10 Min Read</p>
               </div>
             </SwiperSlide>

@@ -48,7 +48,7 @@ function Navbar() {
         </div>
         {/* linke items */}
         <div className='flex justify-center'>
-          <ul className={`flex flex-col gap-16  lg:flex-row items-center justify-center lg:justify-start lg:pb-0 pb-12 absolute lg:static lg:z-auto left-0 w-full lg:w-auto  transition-all duration-500 z-[-1] ease-in-out  ${open ? ' top-0 gap-10 text-2xl md:text-4xl h-screen bg-white' : 'top-[-490px]'}`}>
+          <ul className={`flex flex-col gap-16  lg:flex-row items-center justify-center lg:justify-start lg:pb-0 pb-12 absolute lg:static lg:z-auto left-0 w-full lg:w-auto  transition-all duration-500 z-[-1] ease-in-out  ${open ? ' top-0 gap-10 text-2xl md:text-4xl h-screen bg-white' : 'top-[-550px]'}`}>
             {
               Links.map((link) => (
                 <li key={link.name}>

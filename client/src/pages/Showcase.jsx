@@ -9,9 +9,9 @@ import Showreel from '../components/Showcase/Showreel'
 function ShowcasePage() {
   return (
     <Layout header={<CHeader title={"SHOW CASE"} image={image} />}>
-        <Showreel/>
-        <Showcase/>
-        <Blogs/>
+      <Showreel />
+      <Showcase />
+      <Blogs />
     </Layout>
   )
 }

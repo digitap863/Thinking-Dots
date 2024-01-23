@@ -6,11 +6,11 @@ function TheProcess() {
     const defaultContent =
         "We will sit down, have a discussion, and listen to your concept and requirements. Often, the idea or needs are not fully completed; don’t worry we will help you formulate and refine the concept. The team will make suggestions to improve the outcome. We will adopt a Wow & How approach where we will enrich our discussions with innovative suggestions around strategy, technology, and creative design. Our topics will be driven by pre-prepared understanding of your business and by our collective experience. The goal will always be how to enable your business grow.";
     return (
-        <div className='font-mont my-20'>
-            <h1 className='text-center font-extrabold text-6xl'>The Process</h1>
-            <div className='flex gap-16 items-cener mx-40 mt-16 justify-center'>
-                <div className='flex flex-col items-start min-h-[30rem] w-[50%]'>
-                    <h3 className='font-bold text-3xl w-[90%] mb-10'>OUR SERVICE PROCESS GUIDELINES</h3>
+        <div className='font-mont my-10 lg:my-20'>
+            <h1 className='text-center font-extrabold text-5xl lg:text-6xl'>The Process</h1>
+            <div className='flex flex-col-reverse lg:flex-row gap-16 items-cener mx-4 lg:mx-40 mt-7 px-2 lg:px-0 lg:mt-16 justify-center'>
+                <div className='flex flex-col items-start min-h-[20rem] lg:w-[50%]'>
+                    <h3 className='font-bold text-2xl lg:text-3xl w-[90%] mb-10'>OUR SERVICE PROCESS GUIDELINES</h3>
                     <Accordion
                    
                         motionProps={{
@@ -64,8 +64,8 @@ function TheProcess() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div>
-                    <img className='w-[90%] mt-20' src={process} alt="" />
+                <div className='flex justify-center'>
+                    <img className='lg:w-[90%] lg:mt-20' src={process} alt="" />
                 </div>
 
             </div>
