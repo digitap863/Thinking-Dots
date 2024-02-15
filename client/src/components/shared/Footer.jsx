@@ -9,7 +9,7 @@ function Footer() {
     return (
         <div className='font-mont px-10 lg:px-32 pt-10 pb-5 bg-[#1F1F1F] text-white overflow-hidden'>
             <div className='flex flex-col lg:flex-row justify-between pb-10 lg:pb-24 relative'>
-                <img src={einstein} alt="" className='absolute bottom-[60%] lg:bottom-0 w-[60%] lg:w-[33%] left-[60%] lg:left-[25%]'/>
+                <img src={einstein} alt="" className='absolute bottom-[60%] md:bottom-[47%] lg:bottom-0 w-[60%] md:w-[35%] lg:w-[25%] 2xl::w-[33%] left-[60%] md:left-[60%] lg:left-[30%] 2xl:left-[25%]'/>
                 <div className='lg:w-[40%] flex flex-col gap-2 lg:gap-0'>
                     <h1 className='text-4xl lg:text-6xl font-bold w-[70%] leading-tight lg:tracking-[0.2rem]'>WE SEEK FOR NEW</h1>
                     <h1 className='text-[1.6rem] lg:text-[2.3rem] lg:tracking-[0.4rem] font-bold'>ADVENTURES.</h1>
